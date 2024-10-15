@@ -1,56 +1,26 @@
-/* Body and HTML for proper width */
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%; /* Ensure the body takes full width */
-}
-
-/* Navbar styles */
 .navbar {
     background-color: #7FC7D9;
-    padding: 1rem;
-    width: 98%; /* Set width to 90% of the page */
-    height: 50px;
-    max-width: 1200px; /* Optional: limit the max width for larger screens */
-    margin: 0 auto; /* Center it horizontally */
-    border-radius: 8px; /* Optional: rounded corners */
-    display: flex; /* Flexbox for alignment */
-    justify-content: space-between; /* Space out items across the navbar */
-    align-items: center; /* Vertically center items */
-}
-
-/* Nav links with flexbox */
-.nav-links {
-    list-style: none;
-    display: flex; 
+    padding: 5px;
     width: 100%;
-    justify-content: space-between; /* Space the items left, center, and right */
-    padding: 0;
-    margin: 0;
-}
-
-.nav-links li {
-    flex: 1; /* Make each link take equal space */
+    height: 50px;
+    border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-left {
-    justify-content: flex-start; /* Align the left element to the left */
+.logo_img {
+    width: 60px;
+    height: 60px;
 }
 
-.nav-center {
-    justify-content: center; /* Align the center element to the center */
-}
-
-.nav-right {
-    justify-content: flex-end; /* Align the right element to the right */
+.nav_item {
+    margin-top: 20px;
 }
 
 .nav-links a {
     color: black;
     text-decoration: none;
-    font-size: 1.2rem;
     cursor: pointer;
 }
 
@@ -58,9 +28,22 @@ html, body {
     color: white;
 }
 
+.nav-links {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 /* Dropdown Styles */
 .dropdown-content {
-    display: none; /* Hidden by default */
+    display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -81,43 +64,5 @@ html, body {
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; /* Show the dropdown on hover */
-}
-
-/* Popup Styles */
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    max-width: 400px;
-    width: 100%;
-}
-
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.popup h2 {
-    margin-top: 0;
-}
-
-.popup p {
-    margin-bottom: 0;
+    display: block;
 }
