@@ -11,9 +11,8 @@ function Nav() {
     return (
         <nav className="navbar">
             <ul className="nav-links">
-                {/* Home with Dropdown */}
                 <li className="dropdown">
-                    <a href="#home">MENU</a>
+                    <a class="nav_item" href="#home">MENU</a>
                     <div className="dropdown-content">
                         <a href="#sub-link1">Taco</a>
                         <a href="#sub-link2">Pasta</a>
@@ -22,27 +21,13 @@ function Nav() {
                 </li>
                 <li>
                     <a href="">
-                        <img src="src/assets/logo.svg" alt="Logo Image"/>
-                        <span>Recipio</span>
+                        <img class="logo_img" src="src/assets/logo_recipio.png" alt="Logo Image"/>
                     </a>
                 </li>
                 <li>
-                    <a href="#about">ABOUT</a>
+                    <a class="nav_item" href="#about">ABOUT</a>
                 </li>
             </ul >
-
-            {/* Pop-up message for About */}
-            {
-                isPopupVisible && (
-                    <div className="popup">
-                        <div className="popup-content">
-                            <span className="close-popup" onClick={togglePopup}>&times;</span>
-                            <h2>About Us</h2>
-                            <p>This is a pop-up message when clicking the About link!</p>
-                        </div>
-                    </div>
-                )
-            }
         </nav >
     );
 }
