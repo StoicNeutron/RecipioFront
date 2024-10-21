@@ -1,0 +1,11 @@
+
+.footer{
+    /* display: flex; */
+    /* float: end; */
+    text-align: center;
+    background-color: #7FC7D9;
+    border-radius: 8px;
+    height: 80px;
+    justify-content: center;
+
+}
