@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react'
-import Nav from './components/Nav';
-import './App.css'
+import Nav from './components/Nav'
+import Layout from './components/Layout'
 
 function App() {
 
   return (
     <div>
       <Nav />
+      <Layout />
     </div>
   )
 }
