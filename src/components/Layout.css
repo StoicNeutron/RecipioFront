@@ -1,0 +1,7 @@
+.main {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 600px;
+    border-radius: 8px;
+}
