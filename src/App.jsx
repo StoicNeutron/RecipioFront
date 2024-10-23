@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Nav from './components/Nav'
 import Layout from './components/Layout'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <div>
       <Nav />
       <Layout />
+      <Footer />
     </div>
   )
 }
