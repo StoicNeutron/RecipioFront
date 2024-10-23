@@ -3,7 +3,7 @@ import './Footer.css';
 function Layout(){
     return (
         <div class="footer">
-            <h1>Recipio(footer)</h1>
+            <p>&copy; Recipio</p>
         </div>
     )
 }

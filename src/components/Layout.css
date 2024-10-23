@@ -2,6 +2,8 @@
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
-    height: 600px;
+    height: 700px;
     border-radius: 8px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }

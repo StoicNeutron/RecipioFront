@@ -1,10 +1,11 @@
 .curved_edge_right {
-  --c: 70px;
+  --c: 200px;
   /* control the curvature (works with percentage) */
-  width: 600px;
+  width: 800px;
   aspect-ratio: 2/3;
   /* you can also update the 60%  */
   mask: radial-gradient(var(--c) 60% at left, #0000 calc(100% - 1px), #000);
   background: white;
   border-radius: 10px;
+  margin-left: -180px;
 }
