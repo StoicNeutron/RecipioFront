@@ -1,4 +1,6 @@
 :root {
   font-family: Inder, system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #DCF2F1;
+  max-width: 1450px;
+  min-width: 950px;
 }
