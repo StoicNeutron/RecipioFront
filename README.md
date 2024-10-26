@@ -13,3 +13,6 @@ This repository is for the **front-end** of the application only. The tech stack
 
 - **React**: For building dynamic and interactive user interfaces.
 - **Vite**: A fast and modern development build tool that enhances the development experience for React projects.
+
+<h3>Figma Prototype</h3>
+Link: https://www.figma.com/design/M3k78KjYsret8ecweSHoOB/Recipio-Project?node-id=0-1&node-type=canvas&t=oFw07iK57ChaxHBy-0
