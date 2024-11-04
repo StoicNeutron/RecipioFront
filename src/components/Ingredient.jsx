@@ -1,3 +1,4 @@
+// Ingredient.jsx
 import React, { useState } from 'react';
 import './Ingredient.css';
 
@@ -9,7 +10,7 @@ function Ingredient({ ingredient_name }) {
     };
 
     if (!isVisible) {
-        return null; // Return null to stop rendering the component when it's not visible
+        return null;
     }
 
     return (

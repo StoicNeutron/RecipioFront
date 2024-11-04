@@ -1,12 +1,11 @@
+// DietaryRestrictionAutocomplete.jsx (Input2)
 import React, { useState } from 'react';
-import Ingredient from './Ingredient'; // Import the Ingredient component
 import './Input2.css';
 
-function DietaryRestrictionAutocomplete() {
+function DietaryRestrictionAutocomplete({ onSelectIngredient }) {
     const [inputValue, setInputValue] = useState('');
     const [filteredOptions, setFilteredOptions] = useState([]);
     const [isOptionsVisible, setIsOptionsVisible] = useState(false);
-    const [selectedIngredients, setSelectedIngredients] = useState([]); // State to store selected ingredients
 
     const ingredients = [
         'Tomato', 'Carrot', 'Ham', 'Chicken', 'Pork', 'Basil', 'Garlic', 'American Cheese',
@@ -16,7 +15,7 @@ function DietaryRestrictionAutocomplete() {
     const handleInputChange = (event) => {
         const value = event.target.value;
         setInputValue(value);
-        
+
         // Filter options based on input
         const filtered = ingredients.filter(ingredient =>
             ingredient.toLowerCase().includes(value.toLowerCase())
@@ -29,13 +28,10 @@ function DietaryRestrictionAutocomplete() {
         setInputValue('');
         setIsOptionsVisible(false);
 
-        // Add the selected ingredient to the list if it's not already included
-        setSelectedIngredients((prevIngredients) => {
-            if (!prevIngredients.includes(ingredient)) {
-                return [...prevIngredients, ingredient];
-            }
-            return prevIngredients;
-        });
+        // Call the prop function with the selected ingredient
+        if (onSelectIngredient) {
+            onSelectIngredient(ingredient);
+        }
     };
 
     return (
@@ -63,13 +59,6 @@ function DietaryRestrictionAutocomplete() {
                     ))}
                 </ul>
             )}
-
-            {/* Render Ingredient components for each selected ingredient */}
-            <div className="selected-ingredients">
-                {selectedIngredients.map((ingredient, index) => (
-                    <Ingredient key={index} ingredient_name={ingredient} />
-                ))}
-            </div>
         </div>
     );
 }
