@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Nav.css';
 
-function Nav() {
-    const [isPopupVisible, setPopupVisible] = useState(false);
-
-    const togglePopup = () => {
-        setPopupVisible(!isPopupVisible);
-    };
-
+function Nav({ onAboutClick }) {
     return (
         <nav className="navbar">
             <ul className="nav-links">
                 <li className="dropdown">
-                    <a class="nav_item" href="#home">MENU</a>
+                    <a className="nav_item" href="#home">MENU</a>
                     <div className="dropdown-content">
                         <a href="#sub-link1">Taco</a>
                         <a href="#sub-link2">Pasta</a>
@@ -21,14 +15,17 @@ function Nav() {
                 </li>
                 <li>
                     <a href="">
-                        <img class="logo_img" src="src/assets/logo_recipio.png" alt="Logo Image"/>
+                        <img className="logo_img" src="src/assets/logo_recipio.png" alt="Logo Image"/>
                     </a>
                 </li>
                 <li>
-                    <a class="nav_item" href="#about">ABOUT</a>
+                    <a className="nav_item" href="#about" onClick={(e) => {
+                        e.preventDefault();
+                        onAboutClick();
+                    }}>ABOUT</a>
                 </li>
-            </ul >
-        </nav >
+            </ul>
+        </nav>
     );
 }
 
