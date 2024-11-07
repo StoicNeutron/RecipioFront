@@ -16,11 +16,20 @@ function Left_section() {
         });
     };
 
+    const handleRemoveIngredient = (ingredient) => {
+        setSelectedIngredients((prevIngredients) =>
+            prevIngredients.filter((item) => item !== ingredient)
+        );
+    };
+
     return (
         <div class="curved_edge_left">
-            <Input />
+            <Input/>
             <Input2 onSelectIngredient={handleSelectIngredient} />
-            <Basket selectedIngredients={selectedIngredients} />
+            <Basket 
+                selectedIngredients={selectedIngredients} 
+                onRemoveIngredient={handleRemoveIngredient} 
+            />
         </div>
     );
 }

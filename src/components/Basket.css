@@ -5,4 +5,5 @@
     width: 300px;
     border-radius: 5px;
     padding-top: 25px;
+    overflow-y: auto;
 }

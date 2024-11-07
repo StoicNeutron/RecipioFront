@@ -13,7 +13,11 @@
 }
 
 .logo_img {
-    width: 60px;
+    width: auto;
+    height: 50px;
+}
+
+.logo_img:hover {
     height: 60px;
 }
 

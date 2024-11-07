@@ -8,9 +8,5 @@
     aspect-ratio: 1 / 1;
     justify-content: center;
     align-items: center;
-}
-
-.circle img {
-    width: 60%;
-    height: 60%;
+    cursor: progress;
 }

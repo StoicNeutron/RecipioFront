@@ -15,7 +15,7 @@ function Nav({ onAboutClick }) {
                 </li>
                 <li>
                     <a href="">
-                        <img className="logo_img" src="src/assets/logo_recipio.png" alt="Logo Image"/>
+                        <img className="logo_img" src="src/assets/recipio_full_logo.png" alt="Logo Image"/>
                     </a>
                 </li>
                 <li>

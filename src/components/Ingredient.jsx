@@ -1,25 +1,14 @@
-// Ingredient.jsx
-import React, { useState } from 'react';
+import React from 'react';
 import './Ingredient.css';
 
-function Ingredient({ ingredient_name }) {
-    const [isVisible, setIsVisible] = useState(true);
-
-    const handleRemove = () => {
-        setIsVisible(false);
-    };
-
-    if (!isVisible) {
-        return null;
-    }
-
+function Ingredient({ ingredient_name, onRemove }) {
     return (
         <div className="ingredient_main">
             <div className="txt_area">
                 {ingredient_name}
             </div>
             <div className="remove_area">
-                <button onClick={handleRemove}>X</button>
+                <button onClick={onRemove}>X</button>
             </div>
         </div>
     );
