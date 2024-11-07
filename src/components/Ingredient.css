@@ -1,0 +1,31 @@
+.ingredient_main{
+    display: flex;
+    width: 250px;
+    height: 25px;
+    background-color: white;
+    margin-left: 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.txt_area{
+    flex: 9;
+    margin-left: 10px;
+}
+
+.remove_area{
+    flex:1;
+}
+
+.remove_area button{
+    background-color: red;
+    border-style: none;
+    border-radius: 30px;
+}
+
+.remove_area button:hover{
+    background-color: darkred;
+}

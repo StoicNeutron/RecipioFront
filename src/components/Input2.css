@@ -1,0 +1,58 @@
+/* Container to align label and input box */
+.autocomplete-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    width: 280px;
+}
+
+/* Style for the label */
+.autocomplete-label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: white;
+    padding: 0 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Style for the input box */
+.autocomplete-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style for the dropdown options */
+.autocomplete-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+    z-index: 1000;
+}
+
+/* Style for each option */
+.autocomplete-option {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-option:hover {
+    background-color: #f0f0f0;
+}
