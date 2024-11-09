@@ -7,6 +7,8 @@ Recipio was designed with one mission in mind: to help **reduce food waste**. We
 
 Just **enter the ingredients** you have on hand or **upload the images of the ingredients**, along with any **allergies** or **dietary restrictions**. Recipio will generate a list of recipes tailored to your needs, making it easy to whip up a delicious meal with what you've got. No more wasted groceries!
 
+<img src="demo.png">
+
 <h3>Tech Stack</h3>
 
 This repository is for the **front-end** of the application only. The tech stack includes:
