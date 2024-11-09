@@ -1,0 +1,23 @@
+.generate-button {
+    margin-right: 200px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(135deg, #7FC7D9 0%, #DCF2F1 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.generate-button:hover {
+    background: linear-gradient(135deg, #DCF2F1 0%, #7FC7D9 100%);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.generate-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}

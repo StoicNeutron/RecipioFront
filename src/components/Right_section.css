@@ -8,4 +8,8 @@
   background: white;
   border-radius: 10px;
   margin-left: -180px;
+  color: black;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
