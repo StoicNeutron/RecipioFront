@@ -24,7 +24,6 @@ function Left_section() {
 
     return (
         <div class="curved_edge_left">
-            <Input/>
             <Input2 onSelectIngredient={handleSelectIngredient} />
             <Basket 
                 selectedIngredients={selectedIngredients} 

@@ -24,7 +24,7 @@ function About({ className }) {
                 <li style={{ fontWeight: "bold" }}>Frontend</li>
                 <ol>
                     <li>Samnang Thorn</li>
-                    <li>Sriya Med</li>
+                    <li>Sriya Medarametla</li>
                     <li>Ahnaf Talukder</li>
                     <li>Arman Mahjoor</li>
                 </ol>
