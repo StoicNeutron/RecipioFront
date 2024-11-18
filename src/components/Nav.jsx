@@ -17,6 +17,7 @@ function Nav() {
                         <a href="#sub-link1">Taco</a>
                         <a href="#sub-link2">Pasta</a>
                         <a href="#sub-link3">Pizza</a>
+                        <a href="#sub-link4">Pancakes</a>
                     </div>
                 </li>
                 <li>
@@ -32,4 +33,4 @@ function Nav() {
     );
 }
 
-export default Nav;
+export default Nav; 
